@@ -42,7 +42,10 @@ yarn-error.log*
 htmlcov/
 
 # Cursor
-.cursor/
+.cursor/*
+# 放行 Cursor Cloud Agent 云端环境配置，使其能提交到仓库
+!.cursor/environment.json
+!.cursor/Dockerfile
 .claude/
 
 # 文档与测试程序
